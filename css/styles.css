@@ -1,0 +1,398 @@
+* {
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina rellenos por defecto */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+body {
+  margin: 0; /* Asegúrate de que el body no tenga márgenes */
+}
+
+/* SOBRE MI */
+
+.sobremi {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.sobremi .container {
+  padding: 20px;
+}
+.sobremi .title {
+  font-size: 36px;
+  font-weight: bold;
+}
+.underline {
+  display: flex;
+  height: 10px;
+  margin-top: 10px;
+}
+.underline div {
+  flex: 1;
+}
+.underline .darker-blue {
+  background-color: #000066; /* Darker blue color */
+  border: 1px solid #ffffff; /* White border */
+}
+.underline .blue {
+  background-color: #00aaff;
+  border: 1px solid #ffffff; /* White border */
+}
+.underline .white {
+  background-color: #ffffff;
+}
+.underline .black {
+  background-color: #000000;
+  border: 1px solid #ffffff; /* White border */
+}
+
+/********* FLECHA SIGUIENTE *******/
+
+.flecha {
+  width: 100vw;
+  position: relative;
+}
+.contenido {
+  padding: 20px;
+  width: 100%;
+}
+.blanco {
+  background-color: white;
+  color: white;
+  height: 1px;
+}
+.negro {
+  background-color: #1a1a1a;
+  color: white;
+  height: 1px;
+}
+.imagen-pequena {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 25px);
+  transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .imagen-pequena {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(15% - 20px);
+    transform: translateY(-50%);
+  }
+}
+
+/********* SUBTITULO *******/
+
+.subtitulo {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+}
+
+.subtitulo .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+}
+
+.subtitulo .header .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.subtitulo .header .title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.subtitulo .header .title h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #00aaff;
+  font-weight: bold;
+}
+
+.subtitulo .header .title h1 span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.subtitulo .header .title .underline {
+  width: 100px;
+  height: 4px;
+  background-color: #00aaff;
+  margin-left: 10px;
+}
+
+.subtitulo .header .title .dots {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.subtitulo .header .title .dots div {
+  width: 10px;
+  height: 10px;
+  background-color: #00aaff;
+  margin-left: 5px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.subtitulo .header .profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #00aaff;
+  margin-right: 100px; /* Ajusta este valor para centrar más el círculo del perfil */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  .subtitulo .header .profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: #00aaff;
+    margin-right: 100px; /* Ajusta este valor para centrar más el círculo del perfil */
+  }
+
+  .subtitulo .header .title .dots div {
+    width: 10px;
+    height: 10px;
+    background-color: #00aaff;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+  }
+
+  .subtitulo .header .title-container {
+    margin-bottom: 1px;
+  }
+
+  .subtitulo .header .profile {
+    margin-right: 0;
+    margin-top: 1px;
+    margin-right: 1px;
+  }
+
+  .subtitulo .header .title h1 {
+    font-size: 24px;
+  }
+
+  .subtitulo .header .title h1 span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitulo .header {
+    padding: 10px;
+  }
+
+  .subtitulo .header .title h1 {
+    font-size: 20px;
+  }
+
+  .subtitulo .header .title h1 span {
+    font-size: 24px;
+  }
+
+  .subtitulo .header .title .underline {
+    width: 40px;
+  }
+
+  .subtitulo .header .title .dots div {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/*****************  PERFIL  ****************/
+
+.felipe {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://storage.googleapis.com/a1aa/image/futuristic-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.felipe .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.column {
+  background-color: rgba(51, 51, 51, 0.9);
+  border: 2px solid #00aaff;
+  border-radius: 10px;
+  padding: 18px;
+  width: 900px; /* Ancho para pantallas grandes */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 5px;
+}
+
+.vertical-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7%;
+}
+
+.vertical-line {
+  width: 6px;
+  height: 60%;
+  background-color: #00aaff;
+}
+
+.profile {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.profile img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile h2 {
+  color: #00aaff;
+  margin-bottom: 10px;
+  font-size: 24px;
+  position: relative;
+}
+
+.profile h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #00aaff;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.profile .location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.profile .location img {
+  margin-right: 5px;
+  width: 30px;
+}
+
+.profile .location span {
+  font-weight: bold;
+}
+
+.section-title {
+  color: #00aaff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 10px;
+  position: relative;
+}
+
+.section-title img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.section-title h3 {
+  font-size: 20px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #00aaff;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.item {
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.item p {
+  margin: 0;
+}
+
+.item p strong {
+  font-weight: bold;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.item .imgicono {
+  margin: 10px;
+}
+
+@media (max-width: 900px) {
+  .felipe .container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Alinea al centro */
+  }
+  .column {
+    width: 95%; /* Hace que las columnas ocupen el 100% del ancho */
+    margin: 10px 0; /* Espacio entre columnas */
+  }
+  .vertical-line-container {
+    display: none; /* Oculta la línea vertical en pantallas pequeñas */
+  }
+  .section-title h3 {
+    font-size: 18px; /* Ajusta el tamaño de la fuente en títulos */
+  }
+  .column .section-title img {
+    width: 20px;
+  }
+  .profile img {
+    width: 120px; /* Ajusta el tamaño de la imagen del perfil */
+  }
+  .item .imgicono {
+    width: 20px; /* Ajusta el tamaño de la imagen icono */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  p {
+    font-size: 12px; /* Reduce el tamaño de fuente de los párrafos */
+  }
+}
